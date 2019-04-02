@@ -17,12 +17,12 @@ public class HelloWorldController {
 	
 	@GetMapping(path = "/hello-world-bean")
 	public HelloWorldBean helloWorldBean() {
-		return new HelloWorldBean("Hello World");
+		return new HelloWorldBean("Azizul Hoq","Hello World");
 	}
 	
 	@GetMapping(path = "/hello/{name}")
 	public HelloWorldBean helloWorldBeanPathVariable(@PathVariable String name) {
-		return new HelloWorldBean("Hello "+name+"");
+		return new HelloWorldBean("","Hello "+name+"");
 	}
 
 }
